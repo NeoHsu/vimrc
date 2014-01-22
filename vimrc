@@ -1,7 +1,8 @@
 " neo's vimrc
 " Ting-Fu Hsu <NeoHsuDroid@gmail.com>
 " GITHUB  https://github.com/NeoHsu/vimrc
-" neobundle : auto load all plugins {
+
+" NeoBundle : auto load all plugins {
 if has('vim_starting')
    " be improved
    set nocompatible
@@ -37,7 +38,7 @@ set termencoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,big5,gb2312,latin1
 " }
-"
+
 " General settings {
 set number              " show line number
 set nocompatible        " not compatible with the old-fashion vi mode
@@ -59,6 +60,7 @@ set copyindent          " copy the previous indentation on autoindenting
 set ignorecase          " ignore case when searching
 set smartcase           " ignore case if search pattern is all lowercase,case-sensitive otherwise
 set smarttab            " insert tabs on the start of a line according to context
+set history=50           " keep 50 lines of command line history
 " }
 
 " Color Settings {
