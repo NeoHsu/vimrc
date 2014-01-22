@@ -25,6 +25,7 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'digitaltoad/vim-jade'
 
 " required:
 filetype plugin indent on

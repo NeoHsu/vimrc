@@ -4,5 +4,5 @@ neosnippet-snippets
 neosnippet.vim
 nerdtree
 vim-airline
-vim-colorschemes
 vim-fugitive
+vim-jade
