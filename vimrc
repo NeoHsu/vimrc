@@ -1,7 +1,8 @@
 " neo's vimrc
 " Ting-Fu Hsu <NeoHsuDroid@gmail.com>
 " GITHUB  https://github.com/NeoHsu/vimrc
-" neobundle : auto load all plugins {
+
+" NeoBundle : auto load all plugins {
 if has('vim_starting')
    " be improved
    set nocompatible
@@ -22,6 +23,9 @@ NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'digitaltoad/vim-jade'
 
 " required:
 filetype plugin indent on
@@ -31,14 +35,14 @@ filetype plugin indent on
 NeoBundleCheck
 " }
 
-" Encoding settings {
+" Encoding Settings {
 set encoding=utf-8                                  
 set termencoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,big5,gb2312,latin1
 " }
-"
-" General settings {
+
+" General Settings {
 set number              " show line number
 set nocompatible        " not compatible with the old-fashion vi mode
 set ruler               " show the cursor position all the time
@@ -59,6 +63,7 @@ set copyindent          " copy the previous indentation on autoindenting
 set ignorecase          " ignore case when searching
 set smartcase           " ignore case if search pattern is all lowercase,case-sensitive otherwise
 set smarttab            " insert tabs on the start of a line according to context
+set history=50          " keep 50 lines of command line history
 " }
 
 " Color Settings {
@@ -67,10 +72,20 @@ colorscheme Tomorrow-Night
 syntax on
 " }
 
-" TAB setting {
+" TAB Settings {
 set expandtab           " replace <TAB> with spaces
 set softtabstop=3 
 set shiftwidth=3 
 
 au FileType Makefile set noexpandtab
+" }
+
+" Vim-Airline Settings {
+set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+" }
+
+" NERDTree Settings {
+map <F2> :NERDTreeToggle<CR>
 " }
