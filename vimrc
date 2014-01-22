@@ -23,6 +23,7 @@ NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'bling/vim-airline'
 
 " required:
 filetype plugin indent on
@@ -60,7 +61,7 @@ set copyindent          " copy the previous indentation on autoindenting
 set ignorecase          " ignore case when searching
 set smartcase           " ignore case if search pattern is all lowercase,case-sensitive otherwise
 set smarttab            " insert tabs on the start of a line according to context
-set history=50           " keep 50 lines of command line history
+set history=50          " keep 50 lines of command line history
 " }
 
 " Color Settings {
@@ -75,4 +76,10 @@ set softtabstop=3
 set shiftwidth=3 
 
 au FileType Makefile set noexpandtab
+" }
+
+" Vim-Airline Settings {
+set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 " }
