@@ -24,6 +24,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'bling/vim-airline'
+NeoBundle 'scrooloose/nerdtree'
 
 " required:
 filetype plugin indent on
@@ -33,14 +34,14 @@ filetype plugin indent on
 NeoBundleCheck
 " }
 
-" Encoding settings {
+" Encoding Settings {
 set encoding=utf-8                                  
 set termencoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,big5,gb2312,latin1
 " }
 
-" General settings {
+" General Settings {
 set number              " show line number
 set nocompatible        " not compatible with the old-fashion vi mode
 set ruler               " show the cursor position all the time
@@ -70,7 +71,7 @@ colorscheme Tomorrow-Night
 syntax on
 " }
 
-" TAB setting {
+" TAB Settings {
 set expandtab           " replace <TAB> with spaces
 set softtabstop=3 
 set shiftwidth=3 
@@ -82,4 +83,8 @@ au FileType Makefile set noexpandtab
 set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+" }
+
+" NERDTree Settings {
+map <F2> :NERDTreeToggle<CR>
 " }
