@@ -26,6 +26,7 @@ NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'Valloric/YouCompleteMe'
 
 " required:
 filetype plugin indent on
