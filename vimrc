@@ -22,10 +22,14 @@ NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'flazz/vim-colorschemes'
+"NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'Valloric/YouCompleteMe'
+"NeoBundle 'kchmck/vim-coffee-script'
+"NeoBundle 'tangledhelix/vim-octopress'
+"NeoBundle 'majutsushi/tagbar'
 
 " required:
 filetype plugin indent on
@@ -69,6 +73,7 @@ set history=50          " keep 50 lines of command line history
 " Color Settings {
 set t_Co=256
 colorscheme Tomorrow-Night
+"colorscheme jellybeans
 syntax on
 " }
 
@@ -88,4 +93,10 @@ let g:airline#extensions#tabline#enabled = 1
 
 " NERDTree Settings {
 map <F2> :NERDTreeToggle<CR>
+" }
+
+" TagBar {
+"nmap <F8> :TagbarToggle<CR>
+"let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
+"let g:tagbar_width = 30
 " }
